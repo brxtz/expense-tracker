@@ -1,0 +1,14 @@
+.form-container {
+  width:500px;
+  height: 200px;
+  margin:auto;
+  border-style: groove;
+}
+
+.form-container > h2 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
