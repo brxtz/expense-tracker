@@ -1,27 +1,3 @@
-<!-- <mat-card>
-  <form (submit)="onAddExpense(expenseForm)" #expenseForm = "ngForm">
-    <mat-form-field>
-      <input matInput
-      type="text"
-      name="description"
-      ngModel required minlength="3"
-      #description= "ngModel">
-      <mat-error *ngIf="description.invalid">Invalid operation please enter in a field</mat-error>
-    </mat-form-field>
-    <mat-form-field>
-      <input matInput
-      type="number"
-      name="amount"
-      ngModel required #amount="ngModel">
-      <mat-error *ngIf="amount.invalid">Invalid operation please enter in a field</mat-error>
-    </mat-form-field>
-    <button mat-raised-button
-    color="primary"
-    type="submit">Save</button>
-  </form>
-</mat-card>-->
-<p>Body two work</p>
-<!-- body-two.component.html -->
 <div class="form-container">
   <h2>Add New Expense</h2>
   <form (ngSubmit)="onAddExpense(expenseForm)" #expenseForm="ngForm">
