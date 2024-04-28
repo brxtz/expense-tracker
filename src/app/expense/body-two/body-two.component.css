@@ -12,3 +12,11 @@
 form {
   text-align: center;
 }
+
+label {
+  margin-right: 10px; /* Adjust as needed */
+}
+
+input {
+  margin-bottom: 10px; /* Adjust as needed */
+}
