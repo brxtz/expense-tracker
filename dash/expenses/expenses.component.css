@@ -1,0 +1,15 @@
+mat-card{
+    background-color: white;
+}
+
+#item{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(78, 78, 78);
+}
+
+#head{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: darkorchid;
+}

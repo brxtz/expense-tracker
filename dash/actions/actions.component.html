@@ -1,0 +1,58 @@
+<mat-card color="primary" id="action">
+    <h2 id = "head">Actions</h2>
+    <mat-divider></mat-divider>
+    <mat-nav-list class="list-horizontal">
+        <mat-list-item>
+            <h2>Add New Income</h2>
+            <form (submit)="onAddIncome(incomeForm)" #incomeForm = "ngForm">
+                <mat-form-field>
+                    <input matInput
+                    type="text"
+                    name="title"
+                    placeholder = "Enter title..."
+                    [(ngModel)]="enteredITitle">
+                </mat-form-field>
+                <br>
+                <br>
+                <mat-form-field>
+                    <input
+                    matInput
+                    type="number"
+                    name="total"
+                    placeholder="Enter total..."
+                    [(ngModel)]="enteredITotal">
+                </mat-form-field>
+                <br>
+                <button
+                mat-raised-button
+                type="submit">Save Income</button>
+            </form>
+        </mat-list-item>
+        <mat-list-item>
+            <h2>Add New Expense</h2>
+            <form (submit)="onAddExpense(expenseForm)" #expenseForm = "ngForm">
+                <mat-form-field>
+                    <input matInput
+                    type="text"
+                    name="title"
+                    placeholder = "Enter title..."
+                    [(ngModel)]="enteredETitle">
+                </mat-form-field>
+                <br>
+                <br>
+                <mat-form-field>
+                    <input
+                    matInput
+                    type="number"
+                    name="total"
+                    placeholder="Enter total..."
+                    [(ngModel)]="enteredETotal">
+                </mat-form-field>
+                <br>
+                <button
+                mat-raised-button
+                type="submit">Save Expense</button>
+            </form>
+        </mat-list-item>
+    </mat-nav-list>
+</mat-card>

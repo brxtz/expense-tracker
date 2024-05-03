@@ -1,0 +1,38 @@
+mat-card{
+    width: 95.7%;
+    background-color: darkorchid;
+    margin-left: 40px;
+}
+
+#head{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: white;
+}
+
+h2{
+    color: rgb(73, 73, 73);
+}
+
+mat-nav-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+mat-list-item{
+    width: 48.7%;
+    padding-bottom: 150px;
+    margin-bottom: 5px;
+    padding-top: 135px;
+    margin-top: 5px;
+    margin-left: 10px;;
+    float: left;
+    background: white;
+}
+
+mat-form-field{
+    color: darkorchid;
+    width: 95%
+}
