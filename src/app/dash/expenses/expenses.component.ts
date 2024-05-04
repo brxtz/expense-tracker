@@ -1,4 +1,5 @@
 import { Component, Input, NgModule } from "@angular/core";
+import { NgIf, NgFor } from "@angular/common";
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDivider } from '@angular/material/divider'
 import {MatListModule} from '@angular/material/list';
@@ -18,7 +19,9 @@ import {Expense} from '../dash.model';
       MatDivider,
       MatListModule,
       MatCardModule,
-      MatFormFieldModule
+      MatFormFieldModule,
+      NgIf,
+      NgFor
     ]
 })
 

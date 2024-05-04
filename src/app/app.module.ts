@@ -1,4 +1,5 @@
-import { NgModule, Component, EventEmitter, Output, NO_ERRORS_SCHEMA} from "@angular/core";
+import { NgModule, Component, EventEmitter, Output, NO_ERRORS_SCHEMA, ModuleWithProviders} from "@angular/core";
+import { NgIf } from "@angular/common";
 import { NgForm } from "@angular/forms";
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,8 +16,6 @@ import { AppComponent } from './app.component';
 import { BodyTwoComponent } from './expense/body-two/body-two.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { UserProfileComponent } from './profile/profile.component';
 import { IncomeComponent } from './dash/income/income.component';
 import { ExpenseComponent } from './dash/expenses/expenses.component';
 import { ActionsComponent } from './dash/actions/actions.component';
@@ -32,8 +31,6 @@ import { ActionsComponent } from './dash/actions/actions.component';
     IncomeComponent,
     ExpenseComponent,
     ActionsComponent,
-    SignInComponent,
-    UserProfileComponent,
     Component,
   ],
   imports: [
@@ -49,7 +46,8 @@ import { ActionsComponent } from './dash/actions/actions.component';
     MatListModule,
     MatCardModule,
     BrowserAnimationsModule,
-
+    NgIf,
+    AuthModule
   ],
 })
 export class AppModule { }
