@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./
+      dockerfile: backend.Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MONGO_DB_URL=mongodb://mongo:27017/yourdatabase
+    depends_on:
+      - mongo
+
+  frontend:
+    build:
+      context: ./
+      dockerfile: frontend.Dockerfile
+    ports:
+      - "80:80"
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
