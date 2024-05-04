@@ -37,6 +37,7 @@ import { ActionsComponent } from './dash/actions/actions.component';
     Component,
   ],
   imports: [
+    NgForm,
     EventEmitter,
     Output,
     RouterModule,

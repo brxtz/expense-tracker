@@ -1,28 +1,29 @@
 import { Component, EventEmitter, Output, NgModule } from "@angular/core";
 import { NgForm } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDivider } from '@angular/material/divider'
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { Income, Expense } from "../dash.model"
 import {DashService} from "../dash.services";
 
-@NgModule({
-  imports: [
-    MatToolbarModule,
-    MatDivider,
-    MatListModule,
-    MatCardModule,
-  ]
-})
-export class MaterialModule {}
 
 @Component({
     standalone: true,
     selector: "app-dash-actions",
     templateUrl: "./actions.component.html",
-    styleUrls: ["./actions.component.css"]
+    styleUrls: ["./actions.component.css"],
+    imports: [
+      MatToolbarModule,
+      MatDivider,
+      MatListModule,
+      MatCardModule,
+      MatFormFieldModule,
+      FormsModule
+    ]
 })
 
 
