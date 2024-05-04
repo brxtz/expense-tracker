@@ -1,0 +1,9 @@
+#menu ul{
+  float: left;
+}
+
+#menu li{
+  display: inline-block;
+  width: 50%;
+  position: relative;
+}
