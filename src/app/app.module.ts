@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { IncomeComponent } from './dash/income/income.component';
 import { ExpenseComponent } from './dash/expenses/expenses.component';
 import { ActionsComponent } from './dash/actions/actions.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { ActionsComponent } from './dash/actions/actions.component';
     MatCardModule,
     BrowserAnimationsModule,
     NgIf,
-    AuthModule
+    AuthModule,
+    HttpClientModule
   ],
 })
 export class AppModule { }

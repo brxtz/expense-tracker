@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component'
 import { IncomeComponent } from './dash/income/income.component';
 import { ExpenseComponent } from './dash/expenses/expenses.component';
 import { ActionsComponent } from './dash/actions/actions.component';
+import { DashService } from './dash/dash.services';
+import { Expense, Income } from './dash/dash.model';
 
 @Component({
     selector: 'app-root',
@@ -25,6 +27,15 @@ import { ActionsComponent } from './dash/actions/actions.component';
 })
 
 export class AppComponent {
-  title = 'expense-tracker';
+  // title = 'expense-tracker';
+  storedIncome: Income[] = [];
+  storedExpenses: Expense[] = [];
 
+  onIncomeAdded(income: Income){
+    this.storedIncome.push(income);
+  }
+
+  onExpenseAdded(expense: Expense){
+    this.storedExpenses.push(expense);
+  }
 }
